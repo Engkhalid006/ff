@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشغل أفلام بسيط</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مشغل أفلام بسيط</h1>
+        
+        <div class="add-video">
+            <h2>إضافة فيديو جديد</h2>
+            <form id="videoForm">
+                <input type="text" id="videoTitle" placeholder="اسم الفيلم أو المسلسل" required>
+                <input type="url" id="videoUrl" placeholder="رابط الفيديو" required>
+                <button type="submit">إضافة</button>
+            </form>
+        </div>
+        
+        <div class="continue-watching">
+            <h2>استكمال المشاهدة</h2>
+            <div id="continueList"></div>
+        </div>
+        
+        <div class="video-library">
+            <h2>المكتبة</h2>
+            <div id="videoList"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
